@@ -3,7 +3,15 @@ import React, { useState } from 'react';
 import MyComponent from './MyComponent/MyComponent';
 import DisplayComponent from './DisplayComponent/DisplayComponent';
 
-function App() {
+class App extends React.Component
+{
+  render()
+  {
+    
+  }
+}
+
+function App({title}) {
  /* var isAdmin = false
   let users = [{user : "Naval Andhyal"},
   {user : "Bhavana Andhyal"},
@@ -13,7 +21,8 @@ function App() {
   const [counter, setCounter] = useState(0);
   const onClickFunction = (incrementValue) => {setCounter(counter+incrementValue)};
   return (
-    <div className="App">
+    <div className="header">
+      {title}
       
     <MyComponent clickFunction={onClickFunction} increment={1}/>
     <MyComponent clickFunction={onClickFunction} increment={5}/>
